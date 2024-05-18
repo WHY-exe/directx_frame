@@ -1,0 +1,11 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.configureArgs": [
+        "-DIMGUI_BACKEND_DX11=on",
+        "-DIMGUI_WITH_BACKEND=on",
+        "-DBUILD_TOOLS=off",
+        "-DBUILD_SAMPLE=off",
+        // "-DCMAKE_VERBOSE_MAKEFILE=off"
+        // "-DCMAKE_VERBOSE_BUILD=off"
+    ],
+}
