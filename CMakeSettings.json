@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\build\\install\\${name}",
+      "cmakeCommandArgs": "-DIMGUI_BACKEND_DX11=on -DIMGUI_WITH_BACKEND=on -DBUILD_TOOLS=off -DBUILD_SAMPLE=off",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\build\\install\\${name}",
+      "cmakeCommandArgs": "-DIMGUI_BACKEND_DX11=on -DIMGUI_WITH_BACKEND=on -DBUILD_TOOLS=off -DBUILD_SAMPLE=off",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86_x64" ]
+    }
+  ]
+}
